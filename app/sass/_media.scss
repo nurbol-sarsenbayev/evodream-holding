@@ -1,0 +1,250 @@
+
+/* Medium Devices, Desktops */
+.visible-xxs {
+    display: none !important;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {	
+
+    .form {
+        &-content {
+            justify-content: center;
+            .input-div {
+                margin: 0 15px 30px;
+            }
+        }
+    }
+
+    .hamburger {
+        display: block;
+    }    
+
+    .header {
+        .grow {
+            display: block;
+        }
+
+        &-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .phone-block {
+            position: static;
+            transform: none;
+        }
+
+        &.scrolled {        
+            background-color: #fff;
+    
+            .logo, .phone-block {
+                display: block;
+            }
+
+            .main-menu {
+                top: 105px;
+            }
+        }
+    }
+
+    .footer {
+        text-align: center;
+        &-content {
+            flex-direction: column;
+        }
+    }
+
+	.main-menu {
+        display: none;
+        background-color: #fff;
+		position: fixed;
+		top: 125px;
+		left: 0;
+		right: 0;
+		text-align: left;
+		margin-left: 0;
+		z-index: 98;
+
+		ul {
+			display: block;
+			height: auto;
+			padding: 0;
+
+			li {
+                margin: 0 0 5px;
+
+                &:last-child {
+                    margin: 0;
+                }
+			}
+		}
+    }
+
+    .section {
+        &-main {
+            &-mir {
+                &:before, &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+
+    .logo {
+        max-width: 200px;
+    }
+
+    .header {
+        &.scrolled {
+            padding: 10px 0;
+
+            .main-menu {
+                top: 94px;
+            }        
+        }
+    }
+
+    .main-menu {
+        top: 100px;
+    }
+    
+    .section {
+        &-title {
+            font-size: 35px;
+        }
+
+        &-main {
+            padding-top: 160px;
+            &-title {
+                line-height: 1;
+            }
+
+            &-footer {
+                display: block;
+
+                & > div {
+                    background: transparent;
+
+                    &:before {
+                        right: -1000px;
+                        left: -1000px;
+                        z-index: -1;
+                    }
+                }
+            }
+
+            &-left {
+                width: 100%;
+                padding: 20px 0;
+
+            }
+
+
+        }        
+    }
+
+}
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px) {
+    .form {
+
+        .input-div, .button {
+            width: 100%;
+            margin: 0 0 30px;
+        }
+    }
+
+    .button {
+        width: 100%;
+        min-width: auto;
+
+        &.button-large {
+            font-size: 16px;
+        }
+    }
+
+	.col-xxs-12 {
+		width: 100%;
+	}
+
+	.col-xxs-offset-0 {
+		margin-left: 0;
+    }
+    
+    .visible-xxs {
+        display: block !important;
+    }
+
+	.hidden-xxs {
+		display: none !important;
+    }
+
+    .main-menu {
+        top: 90px;
+    }
+
+    .section {
+        &-title {
+            font-size: 27px;
+            margin-bottom: 20px;
+        }
+        &-main {
+            &-title {
+                font-size: 30px;
+            }            
+            &-aim, &-text, &-mir {
+                font-size: 18px;
+            }
+        }
+
+        
+    }
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.main-menu {
+		.container {
+			width: auto;
+			padding: 0;
+		}
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	
+}

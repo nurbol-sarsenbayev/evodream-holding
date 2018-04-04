@@ -1,0 +1,226 @@
+@import './vars';
+
+@mixin circle($width) {
+	width: $width;
+	height: $width;
+	line-height: $width;	
+	text-align: center;
+	border-radius: 50%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: $text_color;
+    outline: none;
+    // font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+
+    .inverse & {
+        color: #fff;
+    }
+}
+
+input, button, textarea, a {
+    outline: none;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+.inverse {
+    color: #fff;
+}
+
+.accent {
+    color: $accent;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.text {
+    &-center {
+        text-align: center;
+    }
+    &-right {
+        text-align: right;
+    }
+}
+
+.hamburger {
+    display: none;
+    margin-left: 20px;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+	padding: 15px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: $text_color !important;
+    border: 0;
+    background-color: $accent;
+    min-width: 290px;    
+    cursor: pointer;
+
+    &:hover {
+        color: #fff !important;
+    }
+
+    &.button-large {
+        padding: 12px 24px;
+        font-size: 20px;
+        color: $title_color !important;    
+        &:hover {
+            color: #fff !important;
+        }
+    }
+
+    &.button-small {
+        padding: 7px 14px;
+        font-size: 14px;
+        font-weight: 500;
+        min-width: 195px;
+    }
+}
+
+.input, .textarea {
+    background: transparent;
+    color: $text_color;
+    font-size: 14px;
+    line-height: inherit;
+    border: 1px solid $title_color;
+    font-family: $default_family, sans-serif;
+    padding: 16px 30px;
+    min-width: 260px;
+
+    .inverse & {
+        color: #fff;
+        border-color: #fff;
+
+        &::-webkit-input-placeholder {
+            color: #fff;
+        }
+        &::-moz-input-placeholder {
+            color: #fff;
+        }
+        &::-ms-input-placeholder {
+            color: #fff;
+        }
+    }
+
+    &-div {
+        position: relative;
+        
+        & .input {
+          width: 100%;  
+        }
+
+        & .error-message {
+            position: absolute;
+            top: calc(100% + 5px);
+            left: 0;
+        }
+
+        .inverse & {
+            border-bottom-color: #fff;
+        }
+    }
+
+    &.error {
+		border-color: red;
+		color: red;
+
+		&+.error-message {
+			display: block;
+		}
+	}
+
+	&+.error-message {
+        display: none;
+        text-align: left;
+        color: red;
+        padding-left: 30px;
+	}
+
+	&::-webkit-input-placeholder {
+        color: #000;
+        font-weight: 300;
+		opacity: 1;
+	}
+	
+	&::-moz-placeholder {
+        color: #000;
+        font-weight: 300;
+		opacity: 1;
+	}
+	
+	&:-ms-input-placeholder {
+        color: #000;
+        font-weight: 300;
+		opacity: 1;
+	}
+	
+	&.error::-webkit-input-placeholder {
+		color: red;
+	}
+	
+	&.error::-moz-placeholder {
+		color: red;
+	}
+	
+	&.error:-ms-input-placeholder {
+		color: red;
+	}
+}
+
+.text {
+    &-phone {
+        text-decoration: none;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+
+    &-center {
+        text-align: center;
+    }
+}
+
+.form {
+    max-width: 877px;
+    margin: 0 auto;
+    text-align: center;
+
+    &-title {
+        font-weight: bold;
+        margin: 0 0 35px;
+    }
+
+    &-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+}
