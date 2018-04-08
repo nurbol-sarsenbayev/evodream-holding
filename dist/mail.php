@@ -2,9 +2,9 @@
 
 $method = $_SERVER['REQUEST_METHOD'];
 
-$project_name = "AperIT";
-$admin_email  = "info@btchotel.kz, client@marketing-time.kz";
-$server_mail = "<info@btchotel.kz>";
+$project_name = "Evodream Holding";
+$admin_email  = "info@evodreamholding.com, client@marketing-time.kz";
+$server_mail = "<info@evodreamholding.com>";
 $form_subject = "Заявка";
 
 

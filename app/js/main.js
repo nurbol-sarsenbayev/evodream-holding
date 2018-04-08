@@ -52,9 +52,9 @@ $(document).ready(function() {
     onscroll();
 
     $(".main-menu .link").click(function(e) {
-        e.preventDefault();
         var $href = $(this).attr('href');
         if($href.length > 1 && $href.charAt(0) == '#' && $($href).length > 0) {
+            e.preventDefault();
             var top = $($href).offset().top - headerHeight;
             $html.stop().animate({ scrollTop: top }, "slow", "swing");
         }
