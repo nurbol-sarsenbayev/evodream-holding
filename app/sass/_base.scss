@@ -71,17 +71,17 @@ p {
 }
 
 .button {
-    display: inline-block;
-    text-decoration: none;
-	padding: 15px 24px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    color: $text_color !important;
-    border: 0;
-    background-color: $accent;
-    min-width: 290px;    
-    cursor: pointer;
+   display: inline-block;
+   text-decoration: none;
+   padding: 15px 24px;
+   font-size: 16px;
+   font-weight: bold;
+   text-align: center;
+   color: $text_color !important;
+   border: 0;
+   background-color: $accent;
+   min-width: 290px;    
+   cursor: pointer;
 
     &:hover {
         color: #fff !important;

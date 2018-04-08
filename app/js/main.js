@@ -142,6 +142,36 @@ $(document).ready(function() {
     });
 
 
+    $(".carousel-professional").owlCarousel({
+      nav: false,
+      dots: true,
+      loop: true,
+      smartSpeed: 500,
+      margin: 10,
+      navText: ['', ''],
+      responsive: {
+         0: { items: 1 },
+         480: { items: 2 },
+         768: { items: 3 }, 
+         992: { items: 4 }, 
+      },
+   });
+
+   $(".carousel-partners").owlCarousel({
+      nav: false,
+      dots: true,
+      loop: true,
+      smartSpeed: 500,
+      margin: 10,
+      navText: ['', ''],
+      responsive: {
+         0: { items: 1 },
+         480: { items: 2 },
+         768: { items: 3 }, 
+         992: { items: 4 }, 
+      },
+   });
+
 });
 
 function validateEmail(email) {
