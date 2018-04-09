@@ -6,7 +6,7 @@ $(document).ready(function() {
     var $header = $(".header");
     var $menu = $(".main-menu");
     var utms = parseGET();
-    var headerHeight = 105;
+    var headerHeight = 57;
     var $hamburger = $(".hamburger");
 
     if(utms && Object.keys(utms).length > 0) {
@@ -14,6 +14,12 @@ $(document).ready(function() {
     } else {
         utms = JSON.parse(window.sessionStorage.getItem('utms') || "[]");
     }
+
+    if($wnd.width() < 992) {
+        headerHeight = 105;
+    }
+
+    console.log(headerHeight);
 
     $wnd.scroll(function() { onscroll(); });
 
