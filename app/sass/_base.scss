@@ -85,22 +85,13 @@ p {
 
     &:hover {
         color: #fff !important;
-    }
+    }    
 
-    &.button-large {
-        padding: 12px 24px;
-        font-size: 20px;
-        color: $title_color !important;    
-        &:hover {
-            color: #fff !important;
-        }
-    }
-
-    &.button-small {
-        padding: 7px 14px;
-        font-size: 14px;
-        font-weight: 500;
-        min-width: 195px;
+    &.button-yellow {
+        min-width: auto;
+        padding: 0 20px;
+        background-color: #e88232;
+        color: #fff !important;
     }
 }
 

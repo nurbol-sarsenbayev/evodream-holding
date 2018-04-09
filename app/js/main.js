@@ -19,8 +19,6 @@ $(document).ready(function() {
         headerHeight = 105;
     }
 
-    console.log(headerHeight);
-
     $wnd.scroll(function() { onscroll(); });
 
     var onscroll = function() {

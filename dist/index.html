@@ -50,11 +50,11 @@
 				<nav class="main-menu">
 					<div class="container">
 						<ul>
-							<li><a class="link" href="#events">О холдинге</a></li>
+							<li><a class="link" href="#tasks">Цель Холдинга</a></li>
 							<li><a class="link" href="#company">Проекты</a></li>
 							<li><a class="link" href="#founders">Основатели</a></li>
-							<li><a class="link" href="#partners">Партнеры</a></li>
-							<li><a class="link" href="#workers">Франчайзинг</a></li>							
+							<!-- <li><a class="link" href="#partners">Партнеры</a></li> -->
+							<li><a class="link button button-yellow" href="http://franchise.evodreamholding.com" target="_blank">Франшиза</a></li>							
 							<li class="visible-xxs"><a href="tel:+77273573242" class="text-phone">+7 (727) 357-32-42</a></li>
 							<li class="visible-xxs"><a href="tel:+77772844461" class="text-phone">+7 (777) 284-44-61</a></li>
 						</ul>
@@ -224,7 +224,7 @@
                      </div>
                   </div>
                   <div class="founder">
-                     <img src="./img/founder-4.jpg" alt="" class="founder-img">
+                     <img src="./img/founder-4.jpg" alt="" class="founder-img" style="display: none;">
                      <div class="founder-block block-right">
                         <h2 class="founder-block-title">
                            Александр Шуба
@@ -406,7 +406,7 @@
          </div>
       </section>
 
-      <section class="section section-partners" id="partners">
+      <section class="section section-partners" id="partners" id="display: none;">
          <div class="container">
             <h2 class="section-title">
                С нами уже работают партнеры на территории всего Казахстана
@@ -444,7 +444,7 @@
          </div>
       </section>
 
-      <section class="section section-tasks inverse">
+      <section class="section section-tasks inverse" id="tasks">
          <div class="container">
             <h2 class="section-title">
                Социальная деятельность 4 задачи
@@ -534,10 +534,14 @@
 				<div class="input-div">
 				  <input type="text" class="input" name="Ваше имя" placeholder="Ваше имя">
 				</div>
+        <div class="input-div">
+				  <input type="email" class="input" name="Email" placeholder="E-mail">
+				  <span class="error-message">Заполните это поле</span>
+				</div>
 				<div class="input-div">
 				  <input type="tel" class="input" name="Номер телефона" placeholder="Номер телефона*" required>
 				  <span class="error-message">Заполните это поле</span>
-				</div>
+        </div>
 				<button class="button ajax-submit" type="submit" id="modal_ostavit_zaiavku">Оставить заявку</button>
 			</form>
 
