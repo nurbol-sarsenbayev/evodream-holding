@@ -15,9 +15,13 @@ $(document).ready(function() {
         utms = JSON.parse(window.sessionStorage.getItem('utms') || "[]");
     }
 
-    if($wnd.width() < 992) {
+    if($wnd.width() < 480) {
+        headerHeight = 82;
+    } else if($wnd.width() < 768) {
+        headerHeight = 94;
+    } else if($wnd.width() < 992) {
         headerHeight = 105;
-    }
+    } 
 
     $wnd.scroll(function() { onscroll(); });
 
@@ -42,7 +46,7 @@ $(document).ready(function() {
             
             if(id.length > 1 && id.charAt(0) == '#' && $(id).length > 0) {
                 var section = $(id);
-                var sectionTop = section.offset().top;
+                var sectionTop = section.offset().top - headerHeight;
 
                 if(sectionTop <= scrollPos && (sectionTop + section.height()) >= scrollPos) {
                     link.addClass('active');
@@ -154,7 +158,7 @@ $(document).ready(function() {
       margin: 10,
       navText: ['', ''],
       responsive: {
-         0: { items: 1 },
+         0: { items: 1, mouseDrag: false },
          480: { items: 2 },
          768: { items: 3 }, 
          992: { items: 4 }, 
@@ -169,7 +173,7 @@ $(document).ready(function() {
       margin: 10,
       navText: ['', ''],
       responsive: {
-         0: { items: 1 },
+         0: { items: 1, mouseDrag: false },
          480: { items: 2 },
          768: { items: 3 }, 
          992: { items: 4 }, 
