@@ -315,6 +315,11 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px) {
+
+  .call-me {
+    display: block;
+  }
+  
     .form {
 
         .input-div, .button {
